@@ -1,0 +1,159 @@
+/* 1. Global Reset & Theme (Monochrome off-white) */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    /* Clean off-white background for the overall scene */
+    background-color: #f5f5f3;
+    color: #000000; /* Black text for high contrast */
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Main App Container (Styled like a clean mobile screen card) */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px; /* Slightly wider for the card look */
+    margin: 30px auto;
+    background-color: #ffffff; /* Clean white card interior */
+    padding: 30px;
+    border-radius: 30px; /* Matching the button pill shape */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Very subtle depth shadow */
+    border: 1px solid #f0f0ee; /* Extra clean edge */
+}
+
+/* 3. Logo (Now Black and Minimalistic) */
+.app-logo {
+    width: 70px; /* Slightly smaller for minimalism */
+    height: 70px;
+    margin: 0 auto 30px auto; /* Centers it and adds space below */
+    stroke: #000000; /* Minimalistic black stroke */
+    filter: none; /* Removing the previous glow effect */
+    transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+    transform: scale(1.05);
+}
+
+/* 4. Inputs (Minimalistic and Clean) */
+input {
+    color: #000000;
+    background-color: #fafafa; /* Very light subtle background */
+    border: 1px solid #eaeaea;
+    padding: 15px 25px;
+    border-radius: 30px; /* Pill shape */
+    font-size: 16px;
+    text-align: left;
+    font-family: "Rubik", sans-serif;
+    margin: 10px 0;
+    outline: none;
+    transition: border-color 0.2s ease;
+    color-scheme: dark; /* Keep the date popup dark for contrast */
+}
+
+input:focus {
+    border-color: #000000; /* Input glows black when active */
+}
+
+input::placeholder {
+    color: #a0a0a0; /* Lighter gray placeholder */
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    color: #000000;
+}
+
+/* 5. Primary "Add" Button (Black and Bold) */
+button {
+    color: #ffffff; /* White text on black */
+    background-color: #000000; /* Sleek black background */
+    border: none;
+    padding: 18px 25px; /* Slightly taller for presence */
+    border-radius: 30px; /* Pill shape */
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Subtle transparent effect */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* 6. List and Tracker Cards (Secondary Buttons) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Vertical stacking */
+    gap: 15px;
+    margin-top: 35px;
+}
+
+/* This styles the list item as a clean, light secondary button/card */
+ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* Light off-white contrast inside the white container */
+    background-color: #f1f1f0;
+    color: #000000;
+    padding: 30px 20px;
+    border-radius: 20px; /* Large, smooth rounded corners */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03); /* Subtle card shadow */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #eaeaea; /* Crisp edge */
+}
+
+ul li:hover {
+    background-color: #eaeaea; /* Darkens slightly on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+/* Text styles inside the cards */
+.tracker-name {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase; /* Neat label look */
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.tracker-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.huge-number {
+    font-size: 56px; /* Massive number */
+    font-weight: 300; /* Thinner font weight */
+    margin-bottom: 5px;
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic; /* Keeps the handwritten feel */
+    opacity: 0.8;
+}
