@@ -3,7 +3,7 @@
 A sleek, minimalistic web application designed to track upcoming events (countdowns) or past habits (countups). Built with a focus on high-contrast, distraction-free UI, secure user-specific data storage, and modern web development practices.
 
 
-![HabitTracker Demo](screenshots/demo.gif?v=1)
+![HabitTracker Demo](new_demo.gif)
 
 
 
