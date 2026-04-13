@@ -2,8 +2,10 @@
 
 A sleek, minimalistic web application designed to track upcoming events (countdowns) or past habits (countups). Built with a focus on high-contrast, distraction-free UI, secure user-specific data storage, and modern web development practices.
 
-![App Preview](https://habitmate-cd360.web.app)
-![HabitTracker Demo](demo.gif)
+
+![Demo GIF](demo.gif)
+
+
 
 
 ## ✨ Features
